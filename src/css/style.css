@@ -1,0 +1,353 @@
+header {
+	background-color: lightgray;
+	text-align: center;
+	padding: 0.1% 0% 2% 0%;
+}
+
+@media screen and (min-width: 750px) {
+	a {
+		text-decoration: none;
+		color: black;
+	}
+    
+	.search {
+		height: 40px;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.searchForm {
+		display: grid;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+	}
+
+	.searchBtn {
+		height: 46px;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	section {
+		background-color: whitesmoke;
+		margin: 0% 3% 3% 0%;
+	}
+
+	.asideSection {
+		padding: 25px;
+	}
+
+	aside {
+		width: 25%;
+		float: right;
+	}
+
+	ul {
+		padding-inline: 20px;
+	}
+
+	li {
+		margin: 5% 0% 0% 0%;
+	}
+
+	.bouton {
+		background-color: lightgray;
+		text-align: center;
+		padding-top: auto;
+		padding-bottom: auto;
+		grid-column-start: -3;
+		grid-column-end: -1;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	.btnText {
+		margin: 7%;
+	}
+
+	.sectionArticle {
+		display: grid;
+		grid-template-columns: 2% [col-start debut-date] 28% 10%[fin-date debut-auteur] 28% 10%[fin-auteur] 20%[col-end] 2%;
+		grid-template-rows: auto 45px;
+	}
+
+	.article {
+		grid-column-start: col-start;
+		grid-column-end: col-end;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.date {
+		grid-column-start: debut-date;
+		grid-column-end: fin-date;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: center;
+	}
+
+	.auteur {
+		grid-column-start: debut-auteur;
+		grid-column-end: fin-auteur;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: center;
+	}
+
+	.container {
+		margin: 3%;
+	}
+
+	.article-container {
+		left: 0px;
+		width: 75%;
+	}
+
+	nav a {
+		padding: 1%;
+	}
+
+	footer {
+		background-color: lightgray;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	a {
+		text-decoration: none;
+		color: black;
+		display: block;
+		margin: 10px;
+	}
+
+	.search {
+		height: 40px;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.categories {
+		display: none;
+	}
+
+	.searchForm {
+		display: grid;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+	}
+
+	.searchBtn {
+		height: 46px;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	section {
+		background-color: whitesmoke;
+		margin: 5% 0% 10% 0%;
+	}
+
+	aside {
+		background-color: whitesmoke;
+		padding: 25px;
+	}
+
+	.asideSection {
+		margin: 0;
+	}
+
+	ul {
+		padding-inline: 20px;
+	}
+
+	li {
+		margin: 5% 0% 0% 0%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.bouton {
+		background-color: lightgray;
+		text-align: center;
+		padding-top: auto;
+		padding-bottom: auto;
+		grid-column-start: -3;
+		grid-column-end: -1;
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
+
+	.btnText {
+		margin: 7%;
+	}
+
+	.sectionArticle {
+		display: grid;
+		grid-template-columns: 10% [col-start debut-date] 35%[fin-date] 10%[debut-auteur] 35%[fin-auteur col-end] 10%;
+		grid-template-rows: auto auto 20px 45px;
+	}
+
+	.article {
+		grid-column-start: col-start;
+		grid-column-end: col-end;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.date {
+		grid-column-start: debut-date;
+		grid-column-end: fin-date;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: center;
+	}
+
+	.auteur {
+		grid-column-start: debut-auteur;
+		grid-column-end: fin-auteur;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: center;
+	}
+
+	nav a {
+		padding: 1%;
+	}
+
+	footer {
+		background-color: lightgray;
+		text-align: center;
+		padding: 25px;
+	}
+
+	.copyright {
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	a {
+		text-decoration: none;
+		color: black;
+		display: block;
+		margin: 10px;
+	}
+
+	.search {
+		height: 40px;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.categories {
+		display: none;
+	}
+
+	.searchForm {
+		display: grid;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+	}
+
+	.searchBtn {
+		height: 46px;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	section {
+		background-color: whitesmoke;
+		margin: 5% 0% 10% 0%;
+	}
+
+	aside {
+		background-color: whitesmoke;
+		padding: 10px;
+	}
+
+	.asideSection {
+		margin: 0;
+	}
+
+	ul {
+		padding-inline: 20px;
+	}
+
+	li {
+		margin: 5% 0% 0% 0%;
+	}
+
+	.bouton {
+		background-color: lightgray;
+		text-align: center;
+		padding-top: auto;
+		padding-bottom: auto;
+		grid-column-start: -3;
+		grid-column-end: -1;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+
+	.btnText {
+		margin: 7%;
+	}
+
+	.sectionArticle {
+		display: grid;
+		grid-template-columns: 10% [col-start debut-date debut-auteur] 35% 10% 35%[fin-date fin-auteur col-end] 10%;
+		grid-template-rows: auto auto 20px 20px 45px;
+	}
+
+	.article {
+		grid-column-start: col-start;
+		grid-column-end: col-end;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.date {
+		grid-column-start: debut-date;
+		grid-column-end: fin-date;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: center;
+	}
+	.auteur {
+		grid-column-start: debut-auteur;
+		grid-column-end: fin-auteur;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		align-self: center;
+	}
+
+	nav a {
+		padding: 1%;
+	}
+
+	footer {
+		background-color: lightgray;
+		text-align: center;
+		padding: 25px;
+	}
+
+	.copyright {
+		margin-bottom: 25px;
+	}
+}

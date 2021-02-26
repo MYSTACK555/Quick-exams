@@ -2,11 +2,40 @@
 title: Test
 layout: base.njk
 ---
+<aside>
+    <section class="asideSection">
+        <form class="searchForm" action="/action_page.php">
+            <input class="search" type="text" placeholder="Recherche" name="search">
+            <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+    </section>
+    <section class="asideSection categories">
+        <span>Catégories:</span>
+        <ul>
+            {%for categorie in Blog.categories%}
+            <li><a href="#">Lien vers catégorie {{categorie.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</aside>
+<div class="article-container">
+    {%for article in Blog.articles%}
+    <section class="sectionArticle">
+        <div class="article">
 
-<h1>Test jamstack</h1>
-<section>
-    <h2>Need to do some stuff</h2>
-    <p>Ici un certain texte :)</p>
-    <div class="test"></div>
-</section>
-<script src="/js/message.js"></script>
+            <h2>{{article.title}}</h2>
+            {%set text = article.texte%}
+            <p>{{text| striptags(true) | escape | nl2br }}</p>
+        </div>
+        <div class="date">
+            <i class="fas fa-calendar"></i>
+            <span>{{article.publication}}</span>
+        </div>
+        <div class="auteur">
+            <i class="fas fa-user"></i>
+            <span>{{article.auteur}}</span>
+        </div>
+        <div class="bouton"><div class="btnText">Lire la suite</div></div>
+    </section>
+    {% endfor %}
+</div>
