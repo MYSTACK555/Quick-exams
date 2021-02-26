@@ -9,7 +9,7 @@ header {
 		text-decoration: none;
 		color: black;
 	}
-
+    
 	.search {
 		height: 40px;
 		grid-column-start: 1;
@@ -113,13 +113,6 @@ header {
 
 	footer {
 		background-color: lightgray;
-padding: 25px;	
-height: 1em;}
-	.copyright {
-		float: left;
-	}
-	.credit {
-		float: right;
 	}
 }
 
