@@ -1,0 +1,8 @@
+---
+permalink: _redirects
+---
+{%- for item in languages%}
+/   /{{item.language}}/index.html 200 Language={{item.language}}
+{%- endfor %}
+
+/   /fr/index.html 404
