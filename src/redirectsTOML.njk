@@ -3,8 +3,8 @@ permalink: netlify.toml
 ---
 {% for item in languages%}
 [[redirects]]
-from = "/*"
-to = "/{{item.language}}/:splat"
+from = "/"
+to = "/{{item.language}}/index.html"
 status = 200
 force = false
 conditions = {Language = "{{item.language}}"}
