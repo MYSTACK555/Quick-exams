@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta   charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>{{title}}</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <header>
         <nav>
+
+            <div class="logo">
+                <a  href="/">
+                    <img src="/asset/exam.svg" alt="quick-exams logo" width="50"/>
+                </a>
+            </div>
+            <ul>
+                <li><a  href="/">Accueil</a></li>
+                <li><a  href="/contact">Contact</a></li>
+                <li><a  href="/service">Services</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container">
+
+        <nav>
+
             <a href="#">sasdsa</a>
         </nav>
         {{content|safe}}
-    </body>
+    </div>
+</body>
+
 </html>
