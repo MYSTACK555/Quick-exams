@@ -1,6 +1,11 @@
 ---
 permalink: netlify.toml
 ---
+[[redirects]]
+from = "/"
+to = "/fr/index.html"
+status = 404
+force = false
 {% for item in languages%}
 [[redirects]]
 from = "/"
@@ -9,8 +14,3 @@ status = 200
 force = false
 conditions = {Language = "{{item.language}}"}
 {% endfor %}
-[[redirects]]
-from = "/"
-to = "/fr/index.html"
-status = 404
-force = false
