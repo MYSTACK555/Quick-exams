@@ -1,0 +1,16 @@
+---
+permalink: netlify.toml
+---
+{% for item in languages%}
+[[redirects]]
+from = "/"
+to = "/{{item.language}}/index.html"
+status = 200
+force = false
+conditions = {{item.language}}
+{% endfor %}
+[[redirects]]
+from = "/"
+to = "/fr/index.html"
+status = 404
+force = false
