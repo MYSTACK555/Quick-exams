@@ -1,4 +1,48 @@
 {
     "title":"test en",
-    "selectLanguage":"language"
+    "selectLanguage":"language",
+    "allrightReserved":"All right reserved",
+
+    "accueil":"Home",
+    "service":"Service",
+    "contact":"Contact us",
+
+    "h1_index":"Welcome at quick exam",
+    "about_us":"About us?",
+    "our_mission":"Our mission",
+    "mission_paragraph":"Making life easier for students and teachers with distance school in the context of the current pandemic with an online exam platform adapted to different school needs.",
+    "newsletter_subscribe":"Sign up",
+    "newsletter_paragraph":"Sign up to be notified of our launch.",
+    "newsletter_placeholder":"Email adress",
+    "newsletter_button":"Register",
+
+    "h2_service":"Complementary informations",
+    "description_paragraphe":"Quick Exams is a software suite that brings together everything you need to make your life easier with remote mode exams.",
+    "whatToInstall":"You can download and install the entire suite or install just the add-ons you really need.",
+    "modules":[
+        "Exam Generator",
+        "Exam Completion",
+        "Corrector (partial)",
+        "Groups manager",
+        "Exam Schedule manager",
+        "Notes consultation",
+        "Anti-cheat system",
+        "and many other..."
+    ],
+
+    "h1_contact":"About Quick Exams",
+    "our_team":"Our team",
+    "our_team_paragraph":"Our experienced developers are committed to providing you with a modern, clean and easy-to-use platform.",
+    "our_story":"Our story",
+    "our_story_paragraph":"It all started with an end-of-university project when the pandemic was only in its infancy and the platforms were poorly adapted.",
+    "our_specs":"Our speciality",
+    "our_specs_paragraph":"Listen to your need and offering a turnkey platform for all your assessment needs.",
+    "h2_contant":"Contact",
+    "toKnowEverything":"To know everything, write us!",
+    "toKnowEverything_paragraph":"For information or establish a partnership, contact us by email.",
+    "send_mail_placeholder":"Send an email!",
+    "form_mail_name":"Name",
+    "form_mail_email":"Email",
+    "form_mail_message":"Message",
+    "form_mail_button":"Send"
 }
