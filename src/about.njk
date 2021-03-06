@@ -1,0 +1,36 @@
+---
+title: Test
+layout: base.njk
+pagination:
+    data: languages
+    size: 1
+    alias: languages
+permalink: /{{ languages.language }}/about.html
+---
+
+<h1>{{languages.traductionFile.h1_contact}}</h1>
+<section>
+    <h4>{{languages.traductionFile.our_team}}</h4>
+    <p>{{languages.traductionFile.our_team_paragraph}}</p>
+    
+    <h4>{{languages.traductionFile.our_story}}</h4>
+    <p>{{languages.traductionFile.our_story_paragraph}}</p>
+
+    <h4>{{languages.traductionFile.our_specs}}</h4>
+    <p>{{languages.traductionFile.our_specs_paragraph}}</p>
+</section>
+<section>
+    <h2>{{languages.traductionFile.h2_contant}}</h2>
+    <h4>{{languages.traductionFile.toKnowEverything}}</h4>
+    <p>{{languages.traductionFile.toKnowEverything_paragraph}}</p>
+
+<form data-netlify="true">
+    <label for="firstname">{{languages.traductionFile.form_mail_name}}</label>
+    <input type="text" name="firstname">
+    <label for="email">{{languages.traductionFile.form_mail_email}}</label>
+    <input type="email" name="email">
+    <label for="message">{{languages.traductionFile.form_mail_message}}</label>
+    <input type="text" name="message">
+    <button type="submit">{{languages.traductionFile.form_mail_button}}</button>
+</form>
+</section>

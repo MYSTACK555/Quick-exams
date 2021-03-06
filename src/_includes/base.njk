@@ -18,9 +18,9 @@
                 </a>
             </div>
             <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/service">Services</a></li>
+                <li><a href="/{{languages.language}}/">Accueil</a></li>
+                <li><a href="/{{languages.language}}/about.html">Contact</a></li>
+                <li><a href="/{{languages.language}}/services.html">Services</a></li>
             </ul>
             <label for="lang">{{languages.traductionFile.selectLanguage}}</label>
 
@@ -36,16 +36,15 @@
             {% endif %}
             </select>
         </nav>
-
     </header>
+
     <div class="container">
-
-        <nav>
-
-            <a href="#">sasdsa</a>
-        </nav>
         {{content|safe}}
     </div>
+
+    <footer>
+        <div>Copyright © 2021 Quick Exams - {{ languages.traductionFile.allrightReserved }}.</div>
+    </footer>
 </body>
 
 </html>

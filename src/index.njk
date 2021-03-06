@@ -1,0 +1,24 @@
+---
+title: Quick exams | {{languages.traductionFile.accueil}}
+layout: base.njk
+pagination:
+    data: languages
+    size: 1
+    alias: languages
+permalink: /{{ languages.language }}/index.html
+---
+
+<h1>{{languages.traductionFile.h1_index}}</h1>
+<section>
+    <h2>{{languages.traductionFile.about_us}}</h2>
+    <h3>{{languages.traductionFile.our_mission}}</h3>
+    <p>{{languages.traductionFile.mission_paragraph}}</p>
+</section>
+<section>
+    <h2>{{languages.traductionFile.newsletter_subscribe}}</h2>
+    <p>{{languages.traductionFile.newsletter_paragraph}}</p>
+    <form name="newsletter" data-netlify="true">
+        <input type="email" placeholder="{{languages.traductionFile.newsletter_placeholder}}" />
+        <button type="submit">{{languages.traductionFile.newsletter_button}}</button>
+    </form>
+</section>

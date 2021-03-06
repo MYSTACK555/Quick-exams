@@ -1,0 +1,20 @@
+---
+title: Quick exams | {{languages.traductionFile.service}}
+layout: base.njk
+pagination:
+    data: languages
+    size: 1
+    alias: languages
+permalink: /{{ languages.language }}/services.html
+---
+
+<section>
+    <h2>{{languages.traductionFile.h2_service}}</h2>
+    <p>{{languages.traductionFile.description_paragraphe}}</p>
+    <p>{{languages.traductionFile.whatToInstall}}</p>
+    <ul>
+    {% for item in languages.traductionFile.modules %}
+        <li>{{item}}</li>
+    {% endfor %}
+    </ul>
+</section>
