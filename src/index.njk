@@ -17,8 +17,12 @@ permalink: /{{ languages.language }}/index.html
 <section>
     <h2>{{languages.traductionFile.newsletter_subscribe}}</h2>
     <p>{{languages.traductionFile.newsletter_paragraph}}</p>
-    <form name="newsletter" data-netlify="true">
+    <form name="newsletter" data-netlify="true" netlify-honeypot="field">
         <input type="email" placeholder="{{languages.traductionFile.newsletter_placeholder}}" />
+        <p class="hidden">
+            <label>Don’t fill this out if you’re human:</label>
+            <label for="field">Name: <input name="field" /></label>
+        </p>
         <button type="submit">{{languages.traductionFile.newsletter_button}}</button>
     </form>
 </section>
