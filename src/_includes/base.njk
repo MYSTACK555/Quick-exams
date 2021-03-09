@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <script src = "/js/changeLang.js"></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
 
@@ -36,6 +37,8 @@
                 {% endfor %}
             {% endif %}
             </select>
+            <div data-netlify-identity-menu></div>
+            <div data-netlify-identity-button>Login with Netlify Identity</div>
         </nav>
     </header>
 
