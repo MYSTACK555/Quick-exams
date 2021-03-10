@@ -22,6 +22,7 @@
     "@11ty/eleventy": "^0.11.1",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "netlify-cms-app": "^2.14.27",
     "netlify-identity-widget": "^1.9.1"
   }
 }
