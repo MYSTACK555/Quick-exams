@@ -7,7 +7,7 @@ public_folder: "src/asset"
 collections:
   - name: "test"
     label: "test"
-    folder: "_data"
+    folder: "src/_data"
     create: true
     slug: "{{year}}{{month}}{{day}}-{{slug}}"
     fields: # The fields for each document, usually in front matter
