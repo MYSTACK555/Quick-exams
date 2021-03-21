@@ -3,14 +3,14 @@
     "FollowLinkToConfirm":"Follow this link to confirm your user:",
     "ConfirmEmail":"Confirm your email address!",
     "title":"test en",
-    "selectLanguage":"language",
+    "selectLanguage":"Language",
     "allrightReserved":"All right reserved",
 
     "accueil":"Home",
     "service":"Service",
     "contact":"Contact us",
 
-    "h1_index":"Welcome at quick exam",
+    "h1_index":"Welcome at Quick-Exams",
     "about_us":"About us?",
     "our_mission":"Our mission",
     "mission_paragraph":"Making life easier for students and teachers with distance school in the context of the current pandemic with an online exam platform adapted to different school needs.",
@@ -47,5 +47,7 @@
     "form_mail_name":"Name",
     "form_mail_email":"Email",
     "form_mail_message":"Message",
-    "form_mail_button":"Send"
+    "form_mail_button":"Send",
+    "shopNow":"Shop Now",
+    "shop_addToCart":"Add to cart"
 }

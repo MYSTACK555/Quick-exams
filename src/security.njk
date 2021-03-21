@@ -1,0 +1,25 @@
+---
+pagination:
+    data: Security
+    size: 1
+    alias: Security
+permalink: '{{Security.directory}}security.txt'
+---
+# Our security contact
+Contact: security@{{ FeatureFlagAndConfig.baseLink }}
+
+# The expiration validity of this file 
+Expires: Sat, 20 Mar 2021 00:00 -0400
+
+# Our OpenPGP key
+Encryption: {% if FeatureFlagAndConfig.useDevLink %}{{FeatureFlagAndConfig.devLink}}{% endif %}{{FeatureFlagAndConfig.baseLink }}/pgp-key.txt
+
+# Our security acknowledgements page
+Acknowledgments: {% if FeatureFlagAndConfig.useDevLink %}{{FeatureFlagAndConfig.devLink}}{% endif %}{{FeatureFlagAndConfig.baseLink }}/hall-of-fame.html
+
+# Please considere using those language when writing to us :)
+Preferred-Languages: fr, en
+
+# The links where you can find the actual file
+Canonical: {% if FeatureFlagAndConfig.useDevLink %}{{FeatureFlagAndConfig.devLink}}{% endif %}{{FeatureFlagAndConfig.baseLink}}/secutity.txt
+Canonical: {% if FeatureFlagAndConfig.useDevLink %}{{FeatureFlagAndConfig.devLink}}{% endif %}{{FeatureFlagAndConfig.baseLink}}/.well-known/secutity.txt

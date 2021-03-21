@@ -8,6 +8,7 @@
     <script src = "/js/changeLang.js"></script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="/asset/exam.svg" />
 </head>
 
 <body>
@@ -20,14 +21,14 @@
                 </a>
             </div>
             <ul>
-                <li><a href="/{{languages.language}}/">Accueil</a></li>
-                <li><a href="/{{languages.language}}/about.html">Contact</a></li>
-                <li><a href="/{{languages.language}}/services.html">Services</a></li>
+                <li><a href="/{{languages.language}}/">{{languages.traductionFile.accueil}}</a></li>
+                <li><a href="/{{languages.language}}/about.html">{{languages.traductionFile.contact}}</a></li>
+                <li><a href="/{{languages.language}}/services.html">{{languages.traductionFile.service}}</a></li>
             </ul>
             <label for="lang">{{languages.traductionFile.selectLanguage}}</label>
 
             <select name="lang" id="lang">
-            {% if languages.language == "fr"%}
+            {% if languages.language == "FR"%}
                 {% for lang in supportedLanguages %}
                 <option value="{{lang}}">{{lang}}</option>
                 {% endfor %}

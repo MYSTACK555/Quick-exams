@@ -1,0 +1,60 @@
+{
+	"products": [
+		{
+			"code": "Creator",
+			"prix": 15.59,
+			"devise": "can",
+			"frequence": "annualy",
+			"fr": {
+				"name": "Créateur d'examen",
+				"description": "Permet la création d'un examen via un interface web très intuitif."
+			},
+			"en": {
+				"name": "Exam Creator",
+				"description": "Give the ability to create an exam with a intuivie web interface."
+			}
+		},
+		{
+			"code": "Examinator",
+			"prix": 15.59,
+			"frequence": "annualy",
+			"devise": "can",
+			"fr": {
+				"name": "Compléteur d'examen",
+				"description": "Plateforme offrant la possibilité à vos groupe d'élève de passer un examen. Ceux-ci peuvent etre exporter vers en fichiers pdf pour en effectuer la correction. Ce module est accompagné d'un gestionnaire d'horaire offrant la possibilité de céduler une date et une plage horaire à laquel un examen sera rendu disponible aux élèves pour le compléter."
+			},
+			"en": {
+				"name": "Exam Completer",
+				"description": "Platform offering the possibility for your group of students to take an exam. These can be exported to pdf files for correction. This module is accompanied by a schedule manager offering the possibility of scheduling a date and a time slot during which an exam will be made available to students to complete it."
+			}
+		},
+		{
+			"code": "Notation",
+			"prix": 15.59,
+			"frequence": "annualy",
+			"devise": "can",
+			"fr": {
+				"name": "Gestionnaire de note",
+				"description": "Offre à vos enseignants la possibilité de conservé les notes de vos élèves. Vos élèves peuvent consulté les notes de leurs évaluations. Le gestionnaire offre la posibilité d'exporter les notes vers la plateforme de note de votre choix (genote, moodle, etc.) "
+			},
+			"en": {
+				"name": "Grade manager",
+				"description": "Offers your teachers the ability to keep your students' grades. Your students can view their assessment scores. The manager offers the possibility of exporting the notes to the rating platform of your choice (genote, moodle, etc.)"
+			}
+		},
+		{
+			"code": "Suite",
+			"prix": 159.75,
+			"frequence": "annualy",
+			"devise": "can",
+			"fr": {
+				"name": "Suite Quick-exams",
+				"description": "La suite quick-exams contient l'entièreté de la plateforme. Elle vous permet de créer des examens via une interface intuitive, de céduler une date et une plage horaire à laquelle vos étudiant auront accès à l'examen pour le compléter, de faire une correction complète ou partiel des examens de façons automatiser et encore bien plus..."
+			},
+			"en": {
+				"name": "Quick-exams Suite",
+				"description": "The quick-exams suite contains the entire platform. It allows you to create exams via an intuitive interface, to schedule a date and a time slot when your students will have access to the exam to complete it, to make a complete or partial correction of the exams in an automated way and much more... "
+			}
+		}
+	]
+}

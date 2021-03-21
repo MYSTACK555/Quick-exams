@@ -1,10 +1,8 @@
-const languages = require("./supportedLanguages.json");
-async function getText(language) {
+const directories = require("./SecurityDirectory.json");
+async function getText(dir) {
 	try {
-		const file = require(`./${language}.json`);
 		return {
-            "language":language,
-            "traductionFile":file
+            "directory":dir
         };
 	} catch (error) {
 		console.log(error);
@@ -12,7 +10,7 @@ async function getText(language) {
 }
 
 module.exports = async function () {
-	var promises = languages.map(getText);
+	var promises = directories.map(getText);
 	return Promise.all(promises).then((nobbject) => {
 		console.log("nobject:", nobbject);
 		return [].concat.apply([], nobbject);
