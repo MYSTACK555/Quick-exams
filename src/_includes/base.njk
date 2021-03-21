@@ -29,13 +29,13 @@
             <label for="lang">{{languages.traductionFile.selectLanguage}}</label>
 
             <select name="lang" id="lang">
-            {% if languages.language == "FR"%}
+            {% if languages.language == "fr"%}
                 {% for lang in supportedLanguages %}
-                <option value="{{lang}}">{{lang}}</option>
+                <option value="{{lang}}">{{lang | upper}}</option>
                 {% endfor %}
             {% else %}
                 {% for lang in supportedLanguages|reverse %}
-                <option value="{{lang}}">{{lang}}</option>
+                <option value="{{lang}}">{{lang | upper}}</option>
                 {% endfor %}
             {% endif %}
             </select>

@@ -9,8 +9,8 @@ permalink: /{{ languages.language }}/shop.html
 ---
 {% for item in market.products %}
 <section name="{{item.code}}">
-    <div name="title">{% if "FR"==languages.language %}{{item.fr.name}}{% else %}{{item.en.name}}{% endif %}</div>
-    <div name="description">{% if "FR"==languages.language %}{{item.fr.description}}{% else %}{{item.en.description}}{% endif %}</div>
+    <div name="title">{% if "fr"==languages.language %}{{item.fr.name}}{% else %}{{item.en.name}}{% endif %}</div>
+    <div name="description">{% if "fr"==languages.language %}{{item.fr.description}}{% else %}{{item.en.description}}{% endif %}</div>
     <div name="price">{{item.prix}}</div>
     <div name="periode">{{item.frequence}}</div>
     <button type="button" >{{languages.traductionFile.shop_addToCart}}</button>
