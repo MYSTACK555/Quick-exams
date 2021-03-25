@@ -1,3 +1,174 @@
-.hidden{
+/* default style */
+
+/* common */
+.hidden {
     display: none;
+}
+
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+header{
+    width: 100%;
+    position: relative;
+}
+
+.header-pic{
+    background-image:
+    linear-gradient(to right, rgba(200, 200, 255, 0.32), rgba(0, 21, 200, 0.47)),
+    url("/asset/header_pic.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width:100%;
+    background-size:cover;
+    position:absolute;
+    z-index:-1;
+}
+
+.logo{
+    height:40px;
+    display: inline-block;
+}
+
+.logo img{
+    padding: 15px;
+    width: 50px;
+}
+
+.lang{
+    position:relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+.lang-content{
+    display: none;
+    position: absolute;
+    left:80px;
+    background-color: #f1f1f1;
+    min-width:40px;
+    overflow:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.lang-content a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.lang-content a:hover{
+    text-decoration: underline;
+}
+
+.dropbtn{
+    border:none;
+    background-color:transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1em;
+    box-sizing: unset;
+}
+
+.dropbtn:hover{
+    text-decoration: underline;
+}
+
+.dropbtn:focus{
+    outline:none;
+}
+
+.login{
+    float: right;
+}
+
+.login ul li{
+    display: inline-block;
+    
+}
+
+.login ul li a{
+    text-decoration: none;
+    color:#CCDDFF;
+    padding: 10px;
+}
+
+.login ul li:hover{
+    text-decoration: underline #123278;
+}
+
+.show{
+    display: block;
+}
+
+.navigator{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigator li{
+    background-color: rgba(235, 235, 235, 1);
+    text-align: center;
+    width: 98%;
+    margin: 6px auto;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.32);
+    border-radius: 2px;
+}
+
+.navigator li a{
+    display:block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigator li a:hover{
+    text-decoration: underline;
+}
+
+/* desktop style */
+
+@media screen and (min-width: 750px){
+
+    header{
+        height: 300px;
+    }
+
+    .header-pic{
+        height: 300px;
+    }
+
+    .navigator{
+        background-color: rgba(235, 235, 235, 1);
+        width: 98%;
+        margin: 85px auto 0px auto;
+        border-radius: 2px;
+        box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.32);
+    }
+
+    .navigator li{
+        display:inline-block;
+        background-color: transparent;
+        width: 15%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .navigator li a{
+        margin: 0;
+    }
+}
+
+/* large desktop monitor */
+
+@media screen and (min-width: 1000px){
+    body{
+        width: 1000px;
+        margin: auto;
+    }
 }

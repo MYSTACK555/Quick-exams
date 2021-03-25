@@ -8,39 +8,42 @@
     <script src = "/js/changeLang.js"></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3b137f2f98f7f0263123e54fe/207d046f8016a35853778ef24.js");</script>
+    <script src="/js/cssjava.js"></script>
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="icon" type="image/x-icon" href="/asset/exam.svg" />
 </head>
 
 <body>
     <header>
+        <div class="header-pic"></div>
         <nav>
-
+            <div class="logo-side">
+                <div class="lang">
+                    <button onclick="showLangMenu()" class="dropbtn">{{languages.traductionFile.selectLanguage}} ></button>
+                    <div id="drop-content" class="lang-content">
+                        {% if languages.language == "fr"%}
+                            {% for lang in supportedLanguages %}
+                                <a href="/{{lang}}/">{{lang | upper}}</a>
+                            {% endfor %}
+                        {% else %}
+                            {% for lang in supportedLanguages|reverse %}
+                                <a href="/{{lang}}/">{{lang | upper}}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="login" data-netlify-identity-menu></div>
+            </div>
             <div class="logo">
                 <a href="/">
-                    <img src="/asset/exam.svg" alt="quick-exams logo" width="50" />
+                    <img src="/asset/exam.svg" alt="quick-exams logo"/>
                 </a>
             </div>
-            <ul>
-                <li><a href="/{{languages.language}}/">{{languages.traductionFile.accueil}}</a></li>
-                <li><a href="/{{languages.language}}/about.html">{{languages.traductionFile.contact}}</a></li>
-                <li><a href="/{{languages.language}}/services.html">{{languages.traductionFile.service}}</a></li>
+            <ul class="navigator">
+                <li id="homeTab"><a href="/{{languages.language}}/">{{languages.traductionFile.accueil}}</a></li>
+                <li id="contactTab"><a href="/{{languages.language}}/about.html">{{languages.traductionFile.contact}}</a></li>
+                <li id="serviceTab"><a href="/{{languages.language}}/services.html">{{languages.traductionFile.service}}</a></li>
             </ul>
-            <label for="lang">{{languages.traductionFile.selectLanguage}}</label>
-
-            <select name="lang" id="lang">
-            {% if languages.language == "fr"%}
-                {% for lang in supportedLanguages %}
-                <option value="{{lang}}">{{lang | upper}}</option>
-                {% endfor %}
-            {% else %}
-                {% for lang in supportedLanguages|reverse %}
-                <option value="{{lang}}">{{lang | upper}}</option>
-                {% endfor %}
-            {% endif %}
-            </select>
-            <div data-netlify-identity-menu></div>
-            <div data-netlify-identity-button>Login with Netlify Identity</div>
         </nav>
     </header>
 
