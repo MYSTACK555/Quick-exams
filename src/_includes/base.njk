@@ -21,13 +21,14 @@
                 <div class="lang">
                     <button onclick="showLangMenu()" class="dropbtn">{{languages.traductionFile.selectLanguage}} ></button>
                     <div id="drop-content" class="lang-content">
-                        {% if languages.language == "fr"%}
+                        {% set link = permalink|replace("/{{ languages.language }}/","")%}
+                        {% if languages.language == "fr" %}
                             {% for lang in supportedLanguages %}
-                                <a href="/{{lang}}/">{{lang | upper}}</a>
+                                <a href="/{{lang}}/{{link}}">{{lang | upper}}</a>
                             {% endfor %}
                         {% else %}
                             {% for lang in supportedLanguages|reverse %}
-                                <a href="/{{lang}}/">{{lang | upper}}</a>
+                                <a href="/{{lang}}/{{link}}">{{lang | upper}}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
