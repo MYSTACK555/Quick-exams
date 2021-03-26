@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{languages.language}}">
-
 <head>
+    <script async src = "https://www.googletagmanager.com/gtag/js?id={{gAnaliticLink}}%22%3E" </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag ('js', nouvelle date ());
+
+        gtag('config', '{{gAnaliticLink}}');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
@@ -17,14 +24,6 @@
         {%- set gAnaliticLink = FeatureFlagAndConfig.ProdGoogleAnalitic %}
     {%- endif%}
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src = "https://www.googletagmanager.com/gtag/js?id={{gAnaliticLink}}%22%3E" </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag ('js', nouvelle date ());
-
-        gtag('config', '{{gAnaliticLink}}');
-    </script>
 </head>
 
 <body>
