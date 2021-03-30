@@ -24,14 +24,20 @@ permalink: /{{ languages.language }}/about.html
     <h4>{{languages.traductionFile.toKnowEverything}}</h4>
     <p>{{languages.traductionFile.toKnowEverything_paragraph}}</p>
 
-<form name="contact infos" data-netlify="true" data-netlify-recaptcha="true">
-    <label for="firstname">{{languages.traductionFile.form_mail_name}}</label>
-    <input type="text" name="firstname" id="firstname">
-    <label for="email">{{languages.traductionFile.form_mail_email}}</label>
-    <input type="email" name="email" id="email">
-    <label for="message">{{languages.traductionFile.form_mail_message}}</label>
-    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-    <div data-netlify-recaptcha="true"></div>
-    <button type="submit">{{languages.traductionFile.form_mail_button}}</button>
-</form>
+    <form name="contact infos" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="contact-field">
+            <label for="firstname">{{languages.traductionFile.form_mail_name}}</label>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+        <div class="contact-field">
+            <label for="email">{{languages.traductionFile.form_mail_email}}</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="contact-message">
+            <label for="message">{{languages.traductionFile.form_mail_message}}</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+         <div data-netlify-recaptcha="true"></div>
+        <button type="submit">{{languages.traductionFile.form_mail_button}}</button>
+    </form>
 </section>

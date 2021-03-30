@@ -7,13 +7,20 @@ pagination:
     alias: languages
 permalink: /{{ languages.language }}/shop.html
 ---
-{% for item in marketAPI %}
-<section name="{{item.code}}">
-    <div name="title">{{item.name}}</div>
-    <div name="description">{{item.description}}</div>
-    <div name="price">{{item.prix}}{{item.devise}}</div>
-    <div name="periode">{{item.frequence}}</div>
-    <button type="button" >{{languages.traductionFile.shop_addToCart}}</button>
-</section>
-<br>
-{%endfor%}
+
+<h1>{{languages.traductionFile.h1_shop}}</h1>
+<div class="allItem">
+    {% for item in marketAPI %}
+    <section class="shopItem" name="{{item.code}}">
+        <div name="title">{{item.name}}</div>
+        <div name="description">{{item.description}}</div>
+        <div name="priceButton">
+            <div name="priceTag">
+                <div name="price">{{item.prix}}{{item.devise}}</div>
+                <div name="periode">{{item.frequence}}</div>
+            </div>
+            <button type="button" >{{languages.traductionFile.shop_addToCart}}</button>
+        </div>
+    </section>
+    {%endfor%}
+</div>

@@ -10,7 +10,7 @@
     "service":"Service",
     "contact":"Contact us",
 
-    "h1_index":"Welcome at Quick-Exams",
+    "h1_index":"Welcome to Quick-Exams",
     "about_us":"About us?",
     "our_mission":"Our mission",
     "mission_paragraph":"Making life easier for students and teachers with distance school in the context of the current pandemic with an online exam platform adapted to different school needs.",
@@ -49,5 +49,7 @@
     "form_mail_message":"Message",
     "form_mail_button":"Send",
     "shopNow":"Shop Now",
-    "shop_addToCart":"Add to cart"
+    "shop_addToCart":"Add to cart",
+
+    "h1_shop": "Shop"
 }

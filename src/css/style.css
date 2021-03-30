@@ -5,9 +5,18 @@
     display: none;
 }
 
+html{
+    position:relative;
+    min-height: 100%;
+}
+
 body {
-    margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0 75px 0;
+}
+
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  
 header{
@@ -38,7 +47,7 @@ header{
 }
 
 .lang{
-    position:relative;
+    position: relative;
     display: inline-block;
     padding: 15px;
 }
@@ -128,6 +137,144 @@ header{
 
 .navigator li a:hover{
     text-decoration: underline;
+    font-size: 1.02em;
+}
+
+footer{
+    background-image: linear-gradient(to top, rgba(200, 200, 255, 0.32), rgba(0, 21, 200, 0.47));
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    overflow:hidden;
+    text-align: center;
+    height: 55px;
+}
+
+footer div{
+    margin: 10px 0 0 0;
+}
+
+.container{
+    padding: 0 5px;
+}
+
+.container h1{
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.container h2{
+    font-weight: normal;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.container h3{
+    font-weight: normal;
+    font-size: 1.15em;
+    padding: 0;
+    margin: 0 0 5px 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.container h4{
+    font-weight: normal;
+    font-size: 1.05;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.container p{
+    text-align:justify;
+    padding: 2px 6px;
+    font-size: 0.87em;
+}
+
+form[name=newsletter] input[type=email]{
+    width:250px;
+}
+
+form[name=newsletter] button{
+    float:right;
+}
+
+form[name="contact infos"]{
+    padding: 5px 7px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.32);
+    border-radius:2px;
+}
+
+form[name="contact infos"] button{
+    width: 100%;
+    padding: 5px 0;
+}
+
+.contact-field{
+    margin: 8px 0;
+}
+
+.contact-field label{
+    width:fit-content;
+}
+
+.contact-field input{
+    float: right;
+    width: 200px;
+}
+
+.contact-message label{
+    vertical-align: top;
+}
+
+.contact-message textarea{
+    margin: 5px auto;
+    width: 97%;
+}
+
+.shopItem{
+    padding: 9px 7px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.32);
+    border-radius:2px;
+    margin: 20px 0;
+    background-image: linear-gradient(to bottom, rgba(200, 200, 255, 0.32), rgba(0, 21, 200, 0.47));
+}
+
+.shopItem div[name=title]{
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0 0 7px 0;
+}
+
+.shopItem div[name=description]{
+    text-align: justify;
+    margin: 0 0 15px 0;
+    font-size: 0.87em;
+}
+
+.shopItem div[name=price]{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.shopItem div[name=periode]{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.shopItem div[name=priceButton]{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shopItem div[name=priceTag]{
+    grid-column: span 2;
+}
+
+.shopItem div[name=priceButton] button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0;
+    grid-column: span 1;
 }
 
 /* desktop style */
@@ -162,6 +309,44 @@ header{
     .navigator li a{
         margin: 0;
     }
+
+    form[name=newsletter] button{
+        float: none;
+        margin-left:10px;
+    }
+
+    form[name="contact infos"] button{
+        width: 80px;
+        padding: 5px 0;
+    }
+
+    .contact-field label{
+        display: inline-block;
+        width:100px;
+    }
+
+    .contact-field input{
+        float: none;
+        width:300px;
+    }
+
+    .allItem {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 7%;
+    }
+
+    .shopItem {
+        grid-column: span 1;
+        height: 200px;
+        position:relative
+    }
+
+    .shopItem div[name=priceButton]{
+        position: absolute;
+        bottom: 10px;
+        width: 95%;
+    }
 }
 
 /* large desktop monitor */
@@ -169,6 +354,11 @@ header{
 @media screen and (min-width: 1000px){
     body{
         width: 1000px;
-        margin: auto;
+        margin: 0 auto 65px auto;
+    }
+
+    footer{
+        width:1000px;
+        margin:auto;
     }
 }

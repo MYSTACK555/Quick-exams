@@ -49,5 +49,7 @@
     "form_mail_message":"Message",
     "form_mail_button":"Envoyer",
     "shopNow":"Magasiner maintenant",
-    "shop_addToCart": "Ajouter au panier"
+    "shop_addToCart": "Ajouter au panier",
+
+    "h1_shop": "Magasin"
 }
