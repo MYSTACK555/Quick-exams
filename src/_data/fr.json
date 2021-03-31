@@ -51,5 +51,7 @@
     "shopNow":"Magasiner maintenant",
     "shop_addToCart": "Ajouter au panier",
 
+    "error404":"Il semble que la page que vous recherchez ne soit pas disponible. Revenez à la page d'accueil pour essayer de trouver ce que vous recherchez!",
+
     "h1_shop": "Magasin"
 }

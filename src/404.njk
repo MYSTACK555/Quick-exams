@@ -1,0 +1,11 @@
+---
+layout: /layouts/base.njk
+title: Oops! Not Found
+pagination:
+    data: languages
+    size: 1
+    alias: languages
+permalink: /{{ languages.language }}/404.html
+---
+<h1>{{ title }}</h1>
+<p>{{languages.traductionFile.error404}}<a href="{{ "/" | url }}">{{languages.traductionFile.accueil}}</a></p>
