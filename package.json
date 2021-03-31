@@ -24,7 +24,7 @@
     "axios": "^0.21.1",
     "curl": "^0.1.4",
     "dotenv": "^8.2.0",
-    "netlify-cli": "^3.13.7",
+    "netlify-cli": "^3.13.10",
     "netlify-cms-app": "^2.14.27",
     "netlify-identity-widget": "^1.9.1",
     "stripe": "^8.140.0"

@@ -7,7 +7,6 @@ pagination:
     alias: languages
 permalink: /{{ languages.language }}/shop.html
 ---
-
 <h1>{{languages.traductionFile.h1_shop}}</h1>
 <div class="allItem">
     {% for item in marketAPI %}
@@ -19,8 +18,13 @@ permalink: /{{ languages.language }}/shop.html
                 <div name="price">{{item.prix}}{{item.devise}}</div>
                 <div name="periode">{{item.frequence}}</div>
             </div>
-            <button type="button" >{{languages.traductionFile.shop_addToCart}}</button>
+            <form action="#" method="post" name="buyingForm">
+                <input type="hidden" name="sku" value="{{item.code}}" />
+                <button type="submit">{{languages.traductionFile.shop_addToCart}}</button>
+            </form>
         </div>
     </section>
     {%endfor%}
 </div>
+
+<script src="../js/customMarket.js"></script>
