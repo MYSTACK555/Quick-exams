@@ -16,30 +16,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-pic"></div>
-        <nav>
-            <div class="logo-side">
-                {% include "../partials/languageSelector.njk" %}
-                <div class="login" data-netlify-identity-menu></div>
-            </div>
-            <div class="logo">
-                <a href="/">
-                    <img src="/asset/exam.svg" alt="quick-exams logo" />
-                </a>
-            </div>
-            <ul class="navigator">
-                <li id="homeTab"><a href="/{{languages.language}}/">{{languages.traductionFile.accueil}}</a></li>
-                <li id="contactTab"><a
-                        href="/{{languages.language}}/about.html">{{languages.traductionFile.contact}}</a></li>
-                <li id="serviceTab"><a
-                        href="/{{languages.language}}/services.html">{{languages.traductionFile.service}}</a></li>
-                <li id="shopTab"><a href="/{{ languages.language }}/shop.html">{{languages.traductionFile.shopNow}}</a>
-                </li>
-                <li><i class="fas fa-shopping-cart"></i></li>
-            </ul>
-        </nav>
-    </header>
+    {% include "../partials/header.njk" %}
 
     <div class="container">
         {{content|safe}}

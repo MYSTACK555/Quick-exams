@@ -51,7 +51,8 @@
     "shopNow":"Shop Now",
     "shop_addToCart":"Add to cart",
 
-    "error404":"It seems that the page you're searching is not avalaible. Get back to home page to try to find want you searching for!",
+    "404_paragraph":"It seems that the page you're searching is not avalaible. Get back to home page to try to find want you searching for!",
+    "404_title":"OOPS! Not Found",
 
     "h1_shop": "Shop"
 }

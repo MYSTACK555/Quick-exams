@@ -16,3 +16,11 @@ from = "/"
 to = "/fr/index.html"
 status = 200
 force = false
+{% for item in languages%}
+[[redirects]]
+from = "/*"
+to = "/{{item.language}}/404.html"
+status = 404
+force = false
+conditions = {Language = "{{item.language}}"}
+{% endfor %}
