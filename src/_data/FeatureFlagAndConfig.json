@@ -1,7 +1,8 @@
 {
-    "useDevLink":false,
+    "useDevLink":true,
     "devLink":"test.",
     "baseLink":"quick-exams.ca",
     "devGoogleAnalitic":"G-GRYZBS9CBE",
-    "ProdGoogleAnalitic":"G-4178YYLNSL"
+    "ProdGoogleAnalitic":"G-4178YYLNSL",
+    "shop":false
 }
