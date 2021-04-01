@@ -1,5 +1,5 @@
 {
-    "useDevLink":true,
+    "useDevLink":false,
     "devLink":"test.",
     "baseLink":"quick-exams.ca",
     "devGoogleAnalitic":"G-GRYZBS9CBE",
