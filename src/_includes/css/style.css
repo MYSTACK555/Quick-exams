@@ -281,6 +281,11 @@ form[name="contact infos"] button{
 
 @media screen and (min-width: 750px){
 
+    .container{
+        width:80%;
+        margin:auto;
+    }
+
     header{
         height: 300px;
     }
@@ -350,15 +355,3 @@ form[name="contact infos"] button{
 }
 
 /* large desktop monitor */
-
-@media screen and (min-width: 1000px){
-    body{
-        width: 1000px;
-        margin: 0 auto 65px auto;
-    }
-
-    footer{
-        width:1000px;
-        margin:auto;
-    }
-}
