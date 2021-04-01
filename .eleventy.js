@@ -1,4 +1,3 @@
-const stripe = require("stripe");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 
@@ -27,6 +26,7 @@ module.exports = function (config) {
 	config.addPassthroughCopy("src/css");
 	*/
     config.addPassthroughCopy("src/asset");
+    config.addPassthroughCopy("src/sitemap.xml");
 	config.addPassthroughCopy({ "node_modules/stripe/lib/": "js/stripe/" });
 	config.addPassthroughCopy({
 		"node_modules/@fortawesome/fontawesome-free/js/": "js/fontawesome/",
@@ -39,4 +39,4 @@ module.exports = function (config) {
 			data: "_data",
 		},
 	};
-};
+};
