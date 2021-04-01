@@ -54,5 +54,8 @@
     "404_paragraph":"It seems that the page you're searching is not avalaible. Get back to home page to try to find want you searching for!",
     "404_title":"OOPS! Not Found",
 
+    "build_title":"Page in construction",
+    "build_paragraph":"Oops, it seems that this page is currently beeing build. Please come back later",
+
     "h1_shop": "Shop"
 }

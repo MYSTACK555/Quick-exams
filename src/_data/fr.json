@@ -54,5 +54,8 @@
     "404_paragraph":"Il semble que la page que vous recherchez ne soit pas disponible. Revenez à la page d'accueil pour essayer de trouver ce que vous recherchez!",
     "404_title":"OOPS! Page non trouvé",
 
+    "build_title":"Page en construction",
+    "build_paragraph":"Oops, il semblerais que la page est en cours de construction. Veuillez revenir plus tard.",
+
     "h1_shop": "Magasin"
 }
