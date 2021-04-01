@@ -1,7 +1,11 @@
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
+const del = require('del');
 
 module.exports = function (config) {
+    const dirToClean = 'dist/*';
+    del(dirToClean);
+
     //minify filter for css
 	config.addFilter("cssmin", function (code) {
 		return new CleanCSS({}).minify(code).styles;
