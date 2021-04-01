@@ -51,6 +51,8 @@
     "shopNow":"Magasiner maintenant",
     "shop_addToCart": "Ajouter au panier",
 
-    "h1_shop": "Magasin",
-    "pageDescription": "Bienvenue chez Quick-Exams"
+    "404_paragraph":"Il semble que la page que vous recherchez ne soit pas disponible. Revenez à la page d'accueil pour essayer de trouver ce que vous recherchez!",
+    "404_title":"OOPS! Page non trouvé",
+
+    "h1_shop": "Magasin"
 }

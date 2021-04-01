@@ -20,7 +20,6 @@ function joinPrice(product,listPrices) {
 module.exports = async function () {
     const products = await stripe.products.list({});
     const prices = await stripe.prices.list({});
-	//return formatProducts(products);
     var promises = products.data.map(x=>joinPrice(x,prices.data))
     return Promise.all(promises).then((nobbject) => {
 		console.log("nobject:", nobbject);

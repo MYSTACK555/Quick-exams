@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{languages.language}}">
+
+<head>
+    {% include "../partials/googleAnalitics.njk" %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script id="mcjs">
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3b137f2f98f7f0263123e54fe/207d046f8016a35853778ef24.js");
+    </script>
+    <script src="/js/cssjava.min.js"></script>
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="icon" type="image/x-icon" href="/asset/exam.svg" />
+</head>
+
+<body>
+    {% include "../partials/header.njk" %}
+
+    <div class="container">
+        {{content|safe}}
+    </div>
+
+    {% include "../partials/footer.njk" %}
+</body>
+
+</html>

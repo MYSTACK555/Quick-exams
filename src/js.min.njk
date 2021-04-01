@@ -1,0 +1,7 @@
+---
+permalink: /js/cssjava.min.js
+---
+{% set js %}
+    {% include "js/cssjava.js" %}
+{% endset %}
+{{ js | jsmin | safe }}

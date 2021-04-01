@@ -1,0 +1,15 @@
+{%- set gAnaliticLink = "" %}
+{%- if FeatureFlagAndConfig.useDevLink %}
+    {%- set gAnaliticLink = FeatureFlagAndConfig.devGoogleAnalitic %}
+{%- else %}
+    {%- set gAnaliticLink = FeatureFlagAndConfig.ProdGoogleAnalitic %}
+{%- endif%}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{gAnaliticLink}}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{gAnaliticLink}}');
+    </script>
