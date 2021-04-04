@@ -24,7 +24,7 @@ module.exports = async function () {
     const prices = await stripe.prices.list({});
     var promises = products.data.map(x=>joinPrice(x,prices.data))
     return Promise.all(promises).then((nobbject) => {
-		console.log("nobject:", nobbject);
+		console.log("Market Item: loaded");
 		return [].concat.apply([], nobbject);
 	});
 };
