@@ -3,7 +3,7 @@ const inventory = require('./data/products.json');
 
 exports.handler = async (event) => {
   const { sku, quantity } = JSON.parse(event.body);
-  const product = inventory.find((p) => p.sku === sku);
+  const product = marketApi.find((p) => p.sku === sku);
   const validatedQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
 
   const session = await stripe.checkout.sessions.create({

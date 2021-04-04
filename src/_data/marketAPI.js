@@ -1,5 +1,6 @@
 require('dotenv').config();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const fs = require('fs');
 
 function joinPrice(product,listPrices) {
     try {
@@ -25,6 +26,10 @@ module.exports = async function () {
     var promises = products.data.map(x=>joinPrice(x,prices.data))
     return Promise.all(promises).then((nobbject) => {
 		console.log("Market Item: loaded");
+        fs.writeFile('./netlify/functions/data/market.json', JSON.stringify(nobbject), function (err) {
+            if (err) throw err; 
+            console.log('Results Received');
+          }); 
 		return [].concat.apply([], nobbject);
 	});
 };
