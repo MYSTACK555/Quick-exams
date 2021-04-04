@@ -59,5 +59,7 @@
 
     "h1_shop": "Shop",
     "review_messsage" : "Leave a review:",
-    "review_button" : "Reviews"
+    "review_button" : "Reviews",
+
+    "success_buy":"Thank you for your purchase!"
 }

@@ -3,10 +3,8 @@ const inventory = require('./data/market.json');
 
 exports.handler = async (event) => {
   const { sku, quantity } = JSON.parse(event.body);
-  const product = inventory.find((p) => p.sku === sku);
-  console.log(product);
+  const product = inventory.find((p) => p.code === sku);
   const validatedQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
-  console.log("qte  ok!");
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
@@ -19,10 +17,9 @@ exports.handler = async (event) => {
     line_items: [
       {
         name: product.name,
+        amount:product.prix*100,
         description: product.description,
-        images: [product.image],
-        amount: product.amount,
-        currency: product.currency,
+        currency: product.devise,
         quantity: validatedQuantity,
       },
     ],
