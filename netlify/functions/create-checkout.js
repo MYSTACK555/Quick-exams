@@ -1,10 +1,12 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const inventory = require('./data/products.json');
+const inventory = require('./data/market.json');
 
 exports.handler = async (event) => {
   const { sku, quantity } = JSON.parse(event.body);
-  const product = marketApi.find((p) => p.sku === sku);
+  const product = inventory.find((p) => p.sku === sku);
+  console.log(product);
   const validatedQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
+  console.log("qte  ok!");
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
