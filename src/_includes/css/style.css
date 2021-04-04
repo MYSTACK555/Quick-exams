@@ -109,10 +109,6 @@ header{
     text-decoration: underline #123278;
 }
 
-.show{
-    display: block;
-}
-
 .navigator{
     list-style: none;
     padding: 0;
@@ -273,8 +269,48 @@ form[name="contact infos"] button{
 
 .shopItem div[name=priceButton] button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 3px 0;
+    padding: 3px;
     grid-column: span 1;
+}
+
+.reviewBlock{
+    display:none;
+}
+
+.reviewBlock p{
+    background-color: rgba(235, 235, 235, 1);
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.32);
+}
+
+.reviewBlock textarea{
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+
+.reviewBlock button[type=submit]{
+    margin: 5px auto 0 auto;
+    padding: 3px 30px;
+    display: block;
+}
+.reviewBlock h4{
+    margin-bottom: 10px;
+}
+
+.btnReview {
+    border:none;
+    background-color:transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1em;
+    box-sizing: unset;
+    margin: 1em 0 0 0;
+    padding:0;
+    text-decoration: underline;
+}
+
+.btnReview:focus{
+    outline:none;
 }
 
 /* desktop style */
@@ -337,13 +373,13 @@ form[name="contact infos"] button{
 
     .allItem {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 7%;
     }
 
     .shopItem {
         grid-column: span 1;
-        height: 200px;
+        height: 250px;
         position:relative
     }
 
@@ -352,6 +388,33 @@ form[name="contact infos"] button{
         bottom: 10px;
         width: 95%;
     }
+
+    .reviewBlock{
+        padding: 5px;
+        border-radius: 2px;
+        box-shadow:5px 5px 10px 3px rgba(0, 0, 0, 0.32);
+        z-index: 5;
+        position:absolute;
+        background-color:rgba(235, 235, 235, 1);
+        background-image: linear-gradient(to top, rgba(200, 200, 255, 0.32), rgba(0, 21, 200, 0.47));
+        left:90px;
+        top:-40px;
+        width: 250px;
+    }
+}
+/* large desktop monitor */
+
+@media screen and (min-width: 1050px){
+    .allItem{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-/* large desktop monitor */
+/* some stuff that needs to be done after everything else */
+.show{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

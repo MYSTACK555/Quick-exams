@@ -3,7 +3,8 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 function joinPrice(product,listPrices) {
     try {
-        let priceItem=listPrices.filter(x=>{return x.product===product.id});
+        const reviews = require(`./${ product.id }.json`);
+        let priceItem = listPrices.filter(x=>{return x.product===product.id});
         return {
 			"code": product.id,
             "name": product.name,
@@ -11,6 +12,7 @@ function joinPrice(product,listPrices) {
 			"prix": priceItem[0].unit_amount/100,
 			"devise": priceItem[0].currency,
 			"frequence": priceItem[0].type,
+            "reviews": reviews,
 		};
 	} catch (error) {
         console.log(error);

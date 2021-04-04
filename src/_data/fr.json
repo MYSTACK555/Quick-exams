@@ -57,5 +57,7 @@
     "build_title":"Page en construction",
     "build_paragraph":"Oops, il semblerais que la page est en cours de construction. Veuillez revenir plus tard.",
 
-    "h1_shop": "Magasin"
+    "h1_shop": "Magasin",
+    "review_messsage": "Laisser des commentaires:",
+    "review_button": "Commentaires"
 }
