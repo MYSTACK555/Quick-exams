@@ -12,23 +12,19 @@ exports.handler = async (event) => {
     shipping_address_collection: {
       allowed_countries: ['US', 'CA'],
     },
+    success_url: `${process.env.URL}/success.html`,
+    cancel_url: process.env.URL,
     line_items: [
       {
-        price_data:{
-          currency:product.devise,
-          product_data:{
-            name:product.name,
-          },
-          unit_amount:product.prix*100,
-        },
+        name: product.name,
+        amount:product.prix*100,
+        description: product.description,
+        currency: product.devise,
         quantity: validatedQuantity,
       },
     ],
-    mode:'payment',
-    success_url: `https://www.quick-exams.ca/fr/success.html`,
-    cancel_url: process.env.URL,
   });
-console.log(process.env.URL)
+
   return {
     statusCode: 200,
     body: JSON.stringify({
