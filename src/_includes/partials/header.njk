@@ -3,7 +3,9 @@
         <nav>
             <div class="logo-side">
                 {% include "../partials/languageSelector.njk" %}
+                {%- if FeatureFlagAndConfig.identity %}
                 <div class="login" data-netlify-identity-menu></div>
+                {%- endif %}
             </div>
             <div class="logo">
                 <a href="/">
