@@ -3,7 +3,7 @@ for (var item of document.getElementsByName("buyingForm")) {
 }
 
 async function handler(event) {
-	event.preventDefault;
+	event.preventDefault();
 	const form = new FormData(event.target);
 
 	const data = {
