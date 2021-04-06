@@ -1,0 +1,7 @@
+---
+permalink: /js/market.min.js
+---
+{% set js %}
+    {% include "js/market.js" %}
+{% endset %}
+{{ js | jsmin | safe }}

@@ -14,7 +14,7 @@ async function getText(language) {
 module.exports = async function () {
 	var promises = languages.map(getText);
 	return Promise.all(promises).then((nobbject) => {
-		console.log("nobject:", nobbject);
+		console.log("Language file: Loaded");
 		return [].concat.apply([], nobbject);
 	});
 };

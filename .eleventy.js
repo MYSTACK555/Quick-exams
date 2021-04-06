@@ -31,10 +31,6 @@ module.exports = function (config) {
 	*/
     config.addPassthroughCopy("src/asset");
     config.addPassthroughCopy("src/sitemap.xml");
-	config.addPassthroughCopy({ "node_modules/stripe/lib/": "js/stripe/" });
-	config.addPassthroughCopy({
-		"node_modules/@fortawesome/fontawesome-free/js/": "js/fontawesome/",
-	});
 
 	return {
 		dir: {

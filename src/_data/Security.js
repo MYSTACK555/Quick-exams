@@ -12,7 +12,7 @@ async function getText(dir) {
 module.exports = async function () {
 	var promises = directories.map(getText);
 	return Promise.all(promises).then((nobbject) => {
-		console.log("nobject:", nobbject);
+		console.log("Security: Loaded");
 		return [].concat.apply([], nobbject);
 	});
 };
