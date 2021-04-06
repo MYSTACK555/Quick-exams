@@ -19,6 +19,7 @@ permalink: /{{ languages.language }}/shop.html
                     <div name="periode">{{item.frequence}}</div>
                 </div>
                 <form action="" method="post" name="buyingForm">
+                    <input type="hidden" name="callbackURLLanguge" value="{{ languages.language }}" />
                     <input type="hidden" name="sku" value="{{item.code}}" />
                     <button type="submit">{{languages.traductionFile.shop_addToCart}}</button>
                 </form>
@@ -42,4 +43,5 @@ permalink: /{{ languages.language }}/shop.html
         </section>
     {%endfor%}
 </div>
+<script src="https://js.stripe.com/v3"></script>
 <script src="/js/market.min.js"></script>

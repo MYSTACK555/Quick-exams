@@ -9,6 +9,7 @@ async function handler(event) {
 	const data = {
 		sku: form.get("sku"),
 		quantity: Number(1), //can only buy one virtual product
+		callbackURLLanguge : form.get("callbackURLLanguge")
 	};
 
 	const response = await fetch("/.netlify/functions/create-checkout", {
