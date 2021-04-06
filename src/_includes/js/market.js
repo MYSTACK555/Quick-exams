@@ -10,6 +10,7 @@ async function handler(event) {
 		sku: form.get("sku"),
 		quantity: Number(1), //can only buy one virtual product
 	};
+	console.log("before create session");
 
 	const response = await fetch("/.netlify/functions/create-checkout", {
 		method: "POST",
@@ -18,12 +19,13 @@ async function handler(event) {
 		},
 		body: JSON.stringify(data),
 	}).then((res) => res.json());
+	console.log("after create session");
 
 	const stripe = Stripe(response.publishableKey);
 	const { error } = await stripe.redirectToCheckout({
 		sessionId: response.sessionId,
 	});
-
+console.log("test after checkout");
 	if (error) {
 		console.error(error);
 	}
