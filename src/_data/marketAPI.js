@@ -6,12 +6,16 @@ function joinPrice(product,listPrices) {
     try {
         const reviews = require(`./reviews.json`);
         let priceItem = listPrices.filter(x=>{return x.product===product.id});
+        let currency;
+        if(priceItem[0].currency=="cad")
+            currency="$"
         return {
 			"code": product.id,
             "name": product.name,
             "description": product.description,
 			"prix": priceItem[0].unit_amount/100,
 			"devise": priceItem[0].currency,
+            "symbole":currency,
 			"frequence": priceItem[0].type,
             "reviews": reviews[product.id]
 		};

@@ -67,6 +67,7 @@
     "review_messsage": "Laisser des commentaires:",
     "review_button": "Commentaires",
     "shop_warning": "*Ceci est un projet scolaire. Aucun produit n'est réellement vendu ici. Si vous procédez à un achat, celui-ci sera considéré comme un don afin de continuer à parfaire nos connaissances",
+    "shop_paymentFrequence":"Abonnement",
 
     "success_buy":"Merci pour votre achat!"
 }

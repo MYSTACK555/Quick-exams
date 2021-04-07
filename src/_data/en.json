@@ -67,6 +67,7 @@
     "review_messsage" : "Leave a review:",
     "review_button" : "Reviews",
     "shop_warning": "* This is a school project. No product is actually sold here. If you make a purchase, it will be considered as a donation in order to continue to improve our knowledge",
+    "shop_paymentFrequence":"Subscription",
 
     "success_buy":"Thank you for your purchase!"
 }

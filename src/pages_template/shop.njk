@@ -15,8 +15,10 @@ permalink: /{{ languages.language }}/shop.html
             <div class="description">{{item.description}}</div>
             <div class="priceButton">
                 <div class="priceTag">
-                    <div class="price">{{item.prix}}{{item.devise}}</div>
-                    <div class="periode">{{item.frequence}}</div>
+                    <div class="price">{{item.prix}}{{item.symbole}}</div>
+                    {%- if item.frequence == "recurrent" %}
+                        <div class="periode">{{item.languages.traductionFile.shop_paymentFrequence}}</div>
+                    {%- endif %}
                 </div>
                 <form action="#" method="post" name="buyingForm">
                     <input type="hidden" name="callbackURLLanguge" value="{{ languages.language }}" />
@@ -26,9 +28,9 @@ permalink: /{{ languages.language }}/shop.html
                 <button onClick="showReviews(this)" value="{{item.code}}" class="btnReview">{{ languages.traductionFile.review_button }}</button>
             </div>
             <div class="reviewBlock" id="{{item.code}}">
-                {% for review in item.reviews %}
+                {%- for review in item.reviews %}
                     <p class="reviewDes"> {{ review.description }} </p>
-                {%endfor%}
+                {%- endfor %}
                 <form name="reviews" data-netlify="true" netlify-honeypot="true">
                     <h4> {{languages.traductionFile.review_messsage}}</h4>
                     <textarea name="message" id="message{{item.code}}" cols="30" rows="3"></textarea>
