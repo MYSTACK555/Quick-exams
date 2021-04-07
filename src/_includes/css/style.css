@@ -27,7 +27,7 @@ header{
 .header-pic{
     background-image:
     linear-gradient(to right, rgba(200, 200, 255, 0.32), rgba(0, 21, 200, 0.47)),
-    url("/asset/header_pic.jpg");
+    url("/asset/header_pic.webp");
     background-repeat: no-repeat;
     height: 200px;
     width:100%;
