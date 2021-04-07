@@ -6,10 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <meta name="description" content="{{languages.traductionFile.h1_index}}" />
+    {%- set page = (title | replace("Quick Exams | ","")) %}
+    {%- if page=="Service" %}
+        {%- set pageDescription=languages.traductionFile.servicesDescription %}
+    {%- elif page=="Shop" %}
+        {%- set pageDescription=languages.traductionFile.shopDescription %}
+    {%- elif page=="Accueil" %}
+        {%- set pageDescription=languages.traductionFile.indexDescription %}
+    {%- elif page=="Contact" %}
+        {%- set pageDescription=languages.traductionFile.aboutDescription %}
+    {% endif %}
+    <meta name="description" content="{{ pageDescription }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Quick-Exams" />
-    <meta property="og:image" content="https://www.quick-exams.ca//asset/exam.png" />
+    <meta property="og:image" content="https://www.quick-exams.ca/asset/exam.png" />
     <meta property="og:site_name" content="Quick-Exams">
     <meta property="og:url" content="{{FeatureFlagAndConfig.baseLink}}" />
     <meta property="og:description" content="{{languages.traductionFile.h1_index}}" />

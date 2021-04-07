@@ -9,7 +9,13 @@
     "accueil":"Accueil",
     "service":"Service",
     "contact":"Contactez-nous",
+    "shop":"Magasin",
 
+    "indexDescription":"Plateforme d'examens en ligne adapté pour l'école à distance. Quick-Exams facilite la vie des élèves et professeurs",
+    "aboutDescription":"Partagez vos besoins à nos développeurs chevronnés qui sont à l'écoutes vos besoins en matière d'évaluations et vous offre une plateforme d'examen en ligne adapté à tout type d'examens",
+    "shopDescription":"N'achetez que les modules dont vous avez besoins.",
+    "servicesDescription":"Quick-Exams offre une suite logiciel d'examens en ligne qui vous facilite la vie avec l'école à distance pendant la pandémie",
+    
     "h1_index":"Bienvenue chez Quick-Exams",
     "about_us":"À propos de nous?",
     "our_mission":"Notre mission",
