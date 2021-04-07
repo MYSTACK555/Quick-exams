@@ -236,38 +236,38 @@ form[name="contact infos"] button{
     background-image: linear-gradient(to bottom, rgba(200, 200, 255, 0.32), rgba(0, 21, 200, 0.47));
 }
 
-.shopItem div[name=title]{
+.shopItem .title{
     font-weight: bold;
     text-decoration: underline;
     padding: 0 0 7px 0;
 }
 
-.shopItem div[name=description]{
+.shopItem .description{
     text-align: justify;
     margin: 0 0 15px 0;
     font-size: 0.87em;
 }
 
-.shopItem div[name=price]{
+.shopItem .price{
     display: inline-block;
     font-weight: bold;
 }
 
-.shopItem div[name=periode]{
+.shopItem .periode{
     display: inline-block;
     font-weight: bold;
 }
 
-.shopItem div[name=priceButton]{
+.shopItem .priceButton{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.shopItem div[name=priceTag]{
+.shopItem .priceTag{
     grid-column: span 2;
 }
 
-.shopItem div[name=priceButton] button{
+.shopItem .priceButton button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 3px;
     grid-column: span 1;
@@ -383,7 +383,7 @@ form[name="contact infos"] button{
         position:relative
     }
 
-    .shopItem div[name=priceButton]{
+    .shopItem .priceButton{
         position: absolute;
         bottom: 10px;
         width: 95%;
