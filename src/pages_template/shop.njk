@@ -31,10 +31,10 @@ permalink: /{{ languages.language }}/shop.html
                 {%endfor%}
                 <form name="reviews" data-netlify="true" netlify-honeypot="true">
                     <h4> {{languages.traductionFile.review_messsage}}</h4>
-                    <textarea name="message" id="messageid" cols="30" rows="3"></textarea>
+                    <textarea name="message" id="message{{item.code}}" cols="30" rows="3"></textarea>
                     <p class="hidden">
                         <label>Don't fill this out if you're human: </label>
-                        <label for="field">Name: <input name="field" id="fieldid"/></label>
+                        <label for="field{{item.code}}">Name: <input name="field" id="field{{item.code}}"/></label>
                     </p>
                     <input type="hidden" name="id" value="{{item.code}}" />
                     <button type="submit">{{languages.traductionFile.form_mail_button}}</button>
