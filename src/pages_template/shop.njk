@@ -10,7 +10,7 @@ permalink: /{{ languages.language }}/shop.html
 <h1>{{languages.traductionFile.h1_shop}}</h1>
 <div class="allItem">
     {% for item in marketAPI %}
-        <section class="shopItem" name="{{item.code}}">
+        <section class="shopItem">
             <div class="title">{{item.name}}</div>
             <div class="description">{{item.description}}</div>
             <div class="priceButton">
