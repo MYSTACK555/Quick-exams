@@ -312,6 +312,10 @@ form[name="contact infos"] button{
 .btnReview:focus{
     outline:none;
 }
+.avertissement{
+    color: red;
+    font-size: large;
+}
 
 /* desktop style */
 
