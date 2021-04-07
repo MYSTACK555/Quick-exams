@@ -16,8 +16,8 @@ permalink: /{{ languages.language }}/shop.html
             <div class="priceButton">
                 <div class="priceTag">
                     <div class="price">{{item.prix}}{{item.symbole}}</div>
-                    {%- if item.frequence == "recurrent" %}
-                        <div class="periode">{{item.languages.traductionFile.shop_paymentFrequence}}</div>
+                    {%- if item.frequence == "recurring" %}
+                        <div class="periode">{{languages.traductionFile.shop_paymentFrequence}}</div>
                     {%- endif %}
                 </div>
                 <form action="#" method="post" name="buyingForm">
