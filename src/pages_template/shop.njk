@@ -11,14 +11,14 @@ permalink: /{{ languages.language }}/shop.html
 <div class="allItem">
     {% for item in marketAPI %}
         <section class="shopItem" name="{{item.code}}">
-            <div name="title">{{item.name}}</div>
-            <div name="description">{{item.description}}</div>
-            <div name="priceButton">
-                <div name="priceTag">
-                    <div name="price">{{item.prix}}{{item.devise}}</div>
-                    <div name="periode">{{item.frequence}}</div>
+            <div class="title">{{item.name}}</div>
+            <div class="description">{{item.description}}</div>
+            <div class="priceButton">
+                <div class="priceTag">
+                    <div class="price">{{item.prix}}{{item.devise}}</div>
+                    <div class="periode">{{item.frequence}}</div>
                 </div>
-                <form action="" method="post" name="buyingForm">
+                <form action="#" method="post" name="buyingForm">
                     <input type="hidden" name="callbackURLLanguge" value="{{ languages.language }}" />
                     <input type="hidden" name="sku" value="{{item.code}}" />
                     <button type="submit">{{languages.traductionFile.shop_addToCart}}</button>
@@ -31,10 +31,10 @@ permalink: /{{ languages.language }}/shop.html
                 {%endfor%}
                 <form name="reviews" data-netlify="true" netlify-honeypot="true">
                     <h4> {{languages.traductionFile.review_messsage}}</h4>
-                    <textarea name="message" id="message" cols="30" rows="3"></textarea>
+                    <textarea name="message" id="messageid" cols="30" rows="3"></textarea>
                     <p class="hidden">
                         <label>Don't fill this out if you're human: </label>
-                        <label for="field">Name: <input name="field" id="field"/></label>
+                        <label for="field">Name: <input name="field" id="fieldid"/></label>
                     </p>
                     <input type="hidden" name="id" value="{{item.code}}" />
                     <button type="submit">{{languages.traductionFile.form_mail_button}}</button>
