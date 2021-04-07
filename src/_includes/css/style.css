@@ -333,7 +333,7 @@ form[name="contact infos"] button{
     .navigator{
         background-color: rgba(235, 235, 235, 1);
         width: 98%;
-        margin: 85px auto 0px auto;
+        margin: 48px auto 0px auto;
         border-radius: 2px;
         box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.32);
     }
