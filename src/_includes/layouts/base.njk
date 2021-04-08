@@ -5,6 +5,8 @@
     {% include "../partials/googleAnalitics.njk" %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# retire les pages de l'indexation google #}
+    <meta name="robots" content="noindex">
     <title>{{title}}</title>
     {%- set page = (title | replace("Quick Exams | ","")) %}
     {%- if page=="Service" %}
