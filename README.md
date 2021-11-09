@@ -3,4 +3,4 @@
 
 This repo is an e-commerce website create in a scholar context for IGE511 – Aspects informatique du commerce électronique.
 
-It's an static website generate with 11ty and hosted on netlify on the https://www.quick-exams.ca dns
+It's an static website generate with 11ty and hosted on netlify on the https://www.quick-exams.ca (offline since december 2021) dns
